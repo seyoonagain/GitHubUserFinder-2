@@ -79,10 +79,10 @@ export default function SearchResult() {
                                     {data && data.length === 0 && (
                                         <div className='pt-5 flex flex-col items-center'>
                                             <div>
-                                                <h3 className='font-black text-2xl md:text-4xl mb-2'>
+                                                <h3 className='font-black text-3xl md:text-4xl mb-2'>
                                                     Oops!
                                                 </h3>
-                                                <div className='text-lg font-medium md:text-xl'>
+                                                <div className='text-md font-medium md:text-xl'>
                                                     <span className='text-violet-400 font-bold'>
                                                         {username
                                                             ? username
