@@ -31,8 +31,11 @@ export default function SearchResult() {
         setType('repos');
         setPage(1);
     }, [username]);
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, [page]);
     return (
-        <article className='flex flex-col md:flex-row w-full pt-5 xl:px-20'>
+        <article className='flex flex-col md:flex-row w-full pt-5 xl:px-20 mb-20'>
             {userError || user === 404 ? (
                 <NoUserFound />
             ) : (
